@@ -1,6 +1,5 @@
 const BubbleSortObjArr = (arr, key) => {
   let swapped = false;
-  debugger;
   do {
     swapped = false;
     for (let i = 0; i < arr.length; i++) {

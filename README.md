@@ -140,7 +140,8 @@ const employees = [
   },
   {
     id: 10,
-    firstName: 'siffler',
+    firstName: 'mike',
+    lastName: 'siffler',
     age: 45,
     job: 'owner',
     level: 6,
@@ -226,10 +227,189 @@ const sortedEmployeesByAge = [
   },
   {
     id: 10,
-    firstName: 'siffler',
+    firstName: 'mike',
+    lastName: 'siffler',
     age: 45,
     job: 'owner',
     level: 6,
+  },
+];
+```
+
+********************************
+
+## branch 4
+
+Now let try sorting using a string value. Our newly sorted data shoul look like this:
+
+```js
+const sortedEmployeesByFirstName = [
+  {
+    id: 4,
+    firstName: 'alysa',
+    lastName: 'mitchell',
+    age: 19,
+    job: 'bagger',
+    level: 1,
+  },
+  {
+    id: 7,
+    firstName: 'brian',
+    lastName: 'hold',
+    age: 29,
+    job: 'receiver',
+    level: 3,
+  },
+  {
+    id: 8,
+    firstName: 'cheryl',
+    lastName: 'bowers',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 1,
+    firstName: 'chris',
+    lastName: 'fowler',
+    age: 27,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 3,
+    firstName: 'marry',
+    lastName: 'simmons',
+    age: 35,
+    job: 'manager',
+    level: 5,
+  },
+  {
+    id: 10,
+    firstName: 'mike',
+    lastName: 'siffler',
+    age: 45,
+    job: 'owner',
+    level: 6,
+  },
+  {
+    id: 5,
+    firstName: 'paul',
+    lastName: 'jefferson',
+    age: 24,
+    job: 'receiver',
+    level: 3,
+  },
+  {
+    id: 6,
+    firstName: 'paula',
+    lastName: 'sanders',
+    age: 25,
+    job: 'assistant',
+    level: 4,
+  },
+  {
+    id: 9,
+    firstName: 'sandy',
+    lastName: 'finkler',
+    age: 26,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 2,
+    firstName: 'stan',
+    lastName: 'phillips',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+  },
+];
+```
+
+Now let's test sorting by lastName. Our data should look like this:
+
+```js
+const sortedEmployeesByLastName = [
+  {
+    id: 8,
+    firstName: 'cheryl',
+    lastName: 'bowers',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 9,
+    firstName: 'sandy',
+    lastName: 'finkler',
+    age: 26,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 1,
+    firstName: 'chris',
+    lastName: 'fowler',
+    age: 27,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 7,
+    firstName: 'brian',
+    lastName: 'hold',
+    age: 29,
+    job: 'receiver',
+    level: 3,
+  },
+  {
+    id: 5,
+    firstName: 'paul',
+    lastName: 'jefferson',
+    age: 24,
+    job: 'receiver',
+    level: 3,
+  },
+  {
+    id: 4,
+    firstName: 'alysa',
+    lastName: 'mitchell',
+    age: 19,
+    job: 'bagger',
+    level: 1,
+  },
+  {
+    id: 2,
+    firstName: 'stan',
+    lastName: 'phillips',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+  },
+  {
+    id: 6,
+    firstName: 'paula',
+    lastName: 'sanders',
+    age: 25,
+    job: 'assistant',
+    level: 4,
+  },
+  {
+    id: 10,
+    firstName: 'mike',
+    lastName: 'siffler',
+    age: 45,
+    job: 'owner',
+    level: 6,
+  },
+  {
+    id: 3,
+    firstName: 'marry',
+    lastName: 'simmons',
+    age: 35,
+    job: 'manager',
+    level: 5,
   },
 ];
 ```
