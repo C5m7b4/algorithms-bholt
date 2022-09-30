@@ -80,7 +80,7 @@ const employees = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -174,15 +174,6 @@ const sortedEmployeesByAge = [
     hireDate: '2/1/2020',
   },
   {
-    id: 2,
-    firstName: 'stan',
-    lastName: 'phillips',
-    age: 22,
-    job: 'cashier',
-    level: 2,
-    hireDate: '4/1/2020',
-  },
-  {
     id: 8,
     firstName: 'cheryl',
     lastName: 'bowers',
@@ -190,6 +181,15 @@ const sortedEmployeesByAge = [
     job: 'cashier',
     level: 2,
     hireDate: '5/1/2019',
+  },
+  {
+    id: 2,
+    firstName: 'stan',
+    lastName: 'phillips',
+    age: 23,
+    job: 'cashier',
+    level: 2,
+    hireDate: '4/1/2020',
   },
   {
     id: 5,
@@ -350,7 +350,7 @@ const sortedEmployeesByFirstName = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -420,7 +420,7 @@ const sortedEmployeesByLastName = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -539,7 +539,7 @@ const sortedEmployeesByDate = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -631,6 +631,15 @@ const sortedEmployeesByAgeDesc = [
     hireDate: '1/1/2019',
   },
   {
+    id: 2,
+    firstName: 'stan',
+    lastName: 'phillips',
+    age: 23,
+    job: 'cashier',
+    level: 2,
+    hireDate: '4/1/2020',
+  },
+  {
     id: 8,
     firstName: 'cheryl',
     lastName: 'bowers',
@@ -638,15 +647,6 @@ const sortedEmployeesByAgeDesc = [
     job: 'cashier',
     level: 2,
     hireDate: '5/1/2019',
-  },
-  {
-    id: 2,
-    firstName: 'stan',
-    lastName: 'phillips',
-    age: 22,
-    job: 'cashier',
-    level: 2,
-    hireDate: '4/1/2020',
   },
   {
     id: 4,
@@ -668,7 +668,7 @@ const sortedEmployeesByFirstNameDesc = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -774,7 +774,7 @@ const sortedEmployeesByDateDesc = [
     id: 2,
     firstName: 'stan',
     lastName: 'phillips',
-    age: 22,
+    age: 23,
     job: 'cashier',
     level: 2,
     hireDate: '4/1/2020',
@@ -850,7 +850,7 @@ const sortedEmployeesByDateDesc = [
     job: 'owner',
     level: 6,
     hireDate: '1/1/2018',
-  }
+  },
 ];
 ```
 
@@ -864,4 +864,4 @@ Now we should have a complete BubbleSort algorithm
 
 much better than BubbleSort O(n2)
 This sorting method is looking at each number and determining if is greater than the next number and then recurse backwards doing the same thing. if it is bigger then they get swapped.
-
+We are going to set up the Insertion sort to handle numbers and then generate another function to handle sorting arrays of objects by numbers, strings, and dates

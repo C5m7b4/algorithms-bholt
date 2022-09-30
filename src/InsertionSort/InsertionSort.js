@@ -1,5 +1,4 @@
 const InsertionSort = (arr, asc = true) => {
-  debugger;
   for (let i = 1; i < arr.length; i++) {
     let numberToInsert = arr[i];
     let j;
