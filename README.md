@@ -15,6 +15,7 @@ Here we are just basically going to be discussing BigO notation
 
 ### BubbleSort
 
+O(n2)
 Before we do bubble sort, we are going to setup Jest.
 We need to install Jest as a dev dependency first:
 
@@ -854,4 +855,13 @@ const sortedEmployeesByDateDesc = [
 ```
 
 Now we should have a complete BubbleSort algorithm
+
+********************************
+
+## branch 7
+
+### Insertion Sort
+
+much better than BubbleSort O(n2)
+This sorting method is looking at each number and determining if is greater than the next number and then recurse backwards doing the same thing. if it is bigger then they get swapped.
 
