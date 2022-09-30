@@ -19,6 +19,10 @@ root.appendChild(main);
 // console.log(getMiddleOfArray(myArray));
 
 import { employees } from './data';
-import BubbleSortObjArr from './BubbleSort/BubbleSortObjArr';
-const sorted = BubbleSortObjArr(employees, 'age', false);
+// import BubbleSortObjArr from './BubbleSort/BubbleSortObjArr';
+// const sorted = BubbleSortObjArr(employees, 'age', false);
+// console.log(sorted);
+const nums = [10, 5, 3, 8, 2, 6, 4, 7, 9, 1];
+import InsertionSort from './InsertionSort/InsertionSort';
+const sorted = InsertionSort(nums);
 console.log(sorted);
