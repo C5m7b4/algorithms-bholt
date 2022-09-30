@@ -73,6 +73,7 @@ const employees = [
     age: 27,
     job: 'cashier',
     level: 2,
+    hireDate: '1/1/2020',
   },
   {
     id: 2,
@@ -81,6 +82,7 @@ const employees = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2020',
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ const employees = [
     age: 35,
     job: 'manager',
     level: 5,
+    hireDate: '3/1/2020',
   },
   {
     id: 4,
@@ -97,6 +100,7 @@ const employees = [
     age: 19,
     job: 'bagger',
     level: 1,
+    hireDate: '2/1/2020',
   },
   {
     id: 5,
@@ -105,6 +109,7 @@ const employees = [
     age: 24,
     job: 'receiver',
     level: 3,
+    hireDate: '1/1/2019',
   },
   {
     id: 6,
@@ -113,6 +118,7 @@ const employees = [
     age: 25,
     job: 'assistant',
     level: 4,
+    hireDate: '7/1/2019',
   },
   {
     id: 7,
@@ -121,6 +127,7 @@ const employees = [
     age: 29,
     job: 'receiver',
     level: 3,
+    hireDate: '6/1/2020',
   },
   {
     id: 8,
@@ -129,6 +136,7 @@ const employees = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '5/1/2019',
   },
   {
     id: 9,
@@ -137,6 +145,7 @@ const employees = [
     age: 26,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2019',
   },
   {
     id: 10,
@@ -145,6 +154,7 @@ const employees = [
     age: 45,
     job: 'owner',
     level: 6,
+    hireDate: '1/1/2018',
   },
 ];
 ```
@@ -160,6 +170,7 @@ const sortedEmployeesByAge = [
     age: 19,
     job: 'bagger',
     level: 1,
+    hireDate: '2/1/2020',
   },
   {
     id: 2,
@@ -168,6 +179,7 @@ const sortedEmployeesByAge = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2020',
   },
   {
     id: 8,
@@ -176,6 +188,7 @@ const sortedEmployeesByAge = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '5/1/2019',
   },
   {
     id: 5,
@@ -184,6 +197,7 @@ const sortedEmployeesByAge = [
     age: 24,
     job: 'receiver',
     level: 3,
+    hireDate: '1/1/2019',
   },
   {
     id: 6,
@@ -192,6 +206,7 @@ const sortedEmployeesByAge = [
     age: 25,
     job: 'assistant',
     level: 4,
+    hireDate: '7/1/2019',
   },
   {
     id: 9,
@@ -200,6 +215,7 @@ const sortedEmployeesByAge = [
     age: 26,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2019',
   },
   {
     id: 1,
@@ -208,6 +224,7 @@ const sortedEmployeesByAge = [
     age: 27,
     job: 'cashier',
     level: 2,
+    hireDate: '1/1/2020',
   },
   {
     id: 7,
@@ -216,6 +233,7 @@ const sortedEmployeesByAge = [
     age: 29,
     job: 'receiver',
     level: 3,
+    hireDate: '6/1/2020',
   },
   {
     id: 3,
@@ -224,6 +242,7 @@ const sortedEmployeesByAge = [
     age: 35,
     job: 'manager',
     level: 5,
+    hireDate: '3/1/2020',
   },
   {
     id: 10,
@@ -232,6 +251,7 @@ const sortedEmployeesByAge = [
     age: 45,
     job: 'owner',
     level: 6,
+    hireDate: '1/1/2018',
   },
 ];
 ```
@@ -251,6 +271,7 @@ const sortedEmployeesByFirstName = [
     age: 19,
     job: 'bagger',
     level: 1,
+    hireDate: '2/1/2020',
   },
   {
     id: 7,
@@ -259,6 +280,7 @@ const sortedEmployeesByFirstName = [
     age: 29,
     job: 'receiver',
     level: 3,
+    hireDate: '6/1/2020',
   },
   {
     id: 8,
@@ -267,6 +289,7 @@ const sortedEmployeesByFirstName = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '5/1/2019',
   },
   {
     id: 1,
@@ -275,6 +298,7 @@ const sortedEmployeesByFirstName = [
     age: 27,
     job: 'cashier',
     level: 2,
+    hireDate: '1/1/2020',
   },
   {
     id: 3,
@@ -283,6 +307,7 @@ const sortedEmployeesByFirstName = [
     age: 35,
     job: 'manager',
     level: 5,
+    hireDate: '3/1/2020',
   },
   {
     id: 10,
@@ -291,6 +316,7 @@ const sortedEmployeesByFirstName = [
     age: 45,
     job: 'owner',
     level: 6,
+    hireDate: '1/1/2018',
   },
   {
     id: 5,
@@ -299,6 +325,7 @@ const sortedEmployeesByFirstName = [
     age: 24,
     job: 'receiver',
     level: 3,
+    hireDate: '1/1/2019',
   },
   {
     id: 6,
@@ -307,6 +334,7 @@ const sortedEmployeesByFirstName = [
     age: 25,
     job: 'assistant',
     level: 4,
+    hireDate: '7/1/2019',
   },
   {
     id: 9,
@@ -315,6 +343,7 @@ const sortedEmployeesByFirstName = [
     age: 26,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2019',
   },
   {
     id: 2,
@@ -323,6 +352,7 @@ const sortedEmployeesByFirstName = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2020',
   },
 ];
 ```
@@ -338,6 +368,7 @@ const sortedEmployeesByLastName = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '5/1/2019',
   },
   {
     id: 9,
@@ -346,6 +377,7 @@ const sortedEmployeesByLastName = [
     age: 26,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2019',
   },
   {
     id: 1,
@@ -354,6 +386,7 @@ const sortedEmployeesByLastName = [
     age: 27,
     job: 'cashier',
     level: 2,
+    hireDate: '1/1/2020',
   },
   {
     id: 7,
@@ -362,6 +395,7 @@ const sortedEmployeesByLastName = [
     age: 29,
     job: 'receiver',
     level: 3,
+    hireDate: '6/1/2020',
   },
   {
     id: 5,
@@ -370,6 +404,7 @@ const sortedEmployeesByLastName = [
     age: 24,
     job: 'receiver',
     level: 3,
+    hireDate: '1/1/2019',
   },
   {
     id: 4,
@@ -378,6 +413,7 @@ const sortedEmployeesByLastName = [
     age: 19,
     job: 'bagger',
     level: 1,
+    hireDate: '2/1/2020',
   },
   {
     id: 2,
@@ -386,6 +422,7 @@ const sortedEmployeesByLastName = [
     age: 22,
     job: 'cashier',
     level: 2,
+    hireDate: '4/1/2020',
   },
   {
     id: 6,
@@ -394,6 +431,7 @@ const sortedEmployeesByLastName = [
     age: 25,
     job: 'assistant',
     level: 4,
+    hireDate: '7/1/2019',
   },
   {
     id: 10,
@@ -402,6 +440,7 @@ const sortedEmployeesByLastName = [
     age: 45,
     job: 'owner',
     level: 6,
+    hireDate: '1/1/2018',
   },
   {
     id: 3,
@@ -410,6 +449,111 @@ const sortedEmployeesByLastName = [
     age: 35,
     job: 'manager',
     level: 5,
+    hireDate: '3/1/2020',
   },
 ];
 ```
+
+********************************
+
+## branch 5
+
+Now let's see if we need to make any changes if we are sorting by dates. We are going to have to add dates to our data becuase we don't have any yet, but this will complete our first sorting algorithm. And our sorted data should look like this:
+
+```js
+const sortedEmployeesByDate = [
+  {
+    id: 10,
+    firstName: 'mike',
+    lastName: 'siffler',
+    age: 45,
+    job: 'owner',
+    level: 6,
+    hireDate: '1/1/2018',
+  },
+  {
+    id: 5,
+    firstName: 'paul',
+    lastName: 'jefferson',
+    age: 24,
+    job: 'receiver',
+    level: 3,
+    hireDate: '1/1/2019',
+  },
+  {
+    id: 9,
+    firstName: 'sandy',
+    lastName: 'finkler',
+    age: 26,
+    job: 'cashier',
+    level: 2,
+    hireDate: '4/1/2019',
+  },
+  {
+    id: 8,
+    firstName: 'cheryl',
+    lastName: 'bowers',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+    hireDate: '5/1/2019',
+  },
+  {
+    id: 6,
+    firstName: 'paula',
+    lastName: 'sanders',
+    age: 25,
+    job: 'assistant',
+    level: 4,
+    hireDate: '7/1/2019',
+  },
+  {
+    id: 1,
+    firstName: 'chris',
+    lastName: 'fowler',
+    age: 27,
+    job: 'cashier',
+    level: 2,
+    hireDate: '1/1/2020',
+  },
+  {
+    id: 4,
+    firstName: 'alysa',
+    lastName: 'mitchell',
+    age: 19,
+    job: 'bagger',
+    level: 1,
+    hireDate: '2/1/2020',
+  },
+  {
+    id: 3,
+    firstName: 'marry',
+    lastName: 'simmons',
+    age: 35,
+    job: 'manager',
+    level: 5,
+    hireDate: '3/1/2020',
+  },
+  {
+    id: 2,
+    firstName: 'stan',
+    lastName: 'phillips',
+    age: 22,
+    job: 'cashier',
+    level: 2,
+    hireDate: '4/1/2020',
+  },
+  {
+    id: 7,
+    firstName: 'brian',
+    lastName: 'hold',
+    age: 29,
+    job: 'receiver',
+    level: 3,
+    hireDate: '6/1/2020',
+  },
+];
+```
+
+It look's like all we needed to do was add an isDate flag to our function and then have one conditional to check for the dates
+
