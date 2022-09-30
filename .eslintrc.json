@@ -11,7 +11,8 @@
       "react/prop-types": 0,
       "react/react-in-jsx-scope":0,
       "no-console": 0,
-      "no-debugger": 1
+      "no-debugger": 1,
+      "no-unused-vars": "warn"
   },
   "plugins":[
       "react", "import", "jsx-a11y"
@@ -26,7 +27,8 @@
   "env":{
       "es6":true,
       "browser":true,
-      "node":true
+      "node":true,
+      "jest": true
   },
   "settings":{
       "react":{
