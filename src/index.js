@@ -17,3 +17,8 @@ root.appendChild(main);
 // console.log(find(5, myArray));
 // console.log(makeTuples(myArray));
 // console.log(getMiddleOfArray(myArray));
+
+import { employees } from './data';
+import BubbleSortObjArr from './BubbleSort/BubbleSortObjArr';
+const sorted = BubbleSortObjArr(employees, 'age');
+console.log(sorted);
