@@ -20,5 +20,5 @@ root.appendChild(main);
 
 import { employees } from './data';
 import BubbleSortObjArr from './BubbleSort/BubbleSortObjArr';
-const sorted = BubbleSortObjArr(employees, 'lastName');
+const sorted = BubbleSortObjArr(employees, 'hireDate', true);
 console.log(sorted);
