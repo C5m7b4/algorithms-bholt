@@ -70,9 +70,19 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // const sorted = RadixSort(nums);
 // console.log(sorted);
 
-import QuickSort from './QuickSort/QuickSortObjArr';
-const sorted = QuickSort(employees, 'firstName');
-console.log(sorted);
-import { binarySearch } from './BinarySearch/BinarySearch';
-const result = binarySearch(sorted, 'firstName', 'paul');
-console.log(result);
+// import QuickSort from './QuickSort/QuickSortObjArr';
+// const sorted = QuickSort(employees, 'firstName');
+// console.log(sorted);
+// import { binarySearch } from './BinarySearch/BinarySearch';
+// const result = binarySearch(sorted, 'firstName', 'paul');
+// console.log(result);
+
+import ArrayList from './ArrayList/ArrayList';
+const array = new ArrayList();
+array.push(1);
+array.push(2);
+array.push(3);
+array.push(4);
+array.push(5);
+array.delete(0);
+console.log(array);

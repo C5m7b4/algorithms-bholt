@@ -17,6 +17,8 @@ const binarySearch = (array, key, value) => {
       }
     }
   }
+
+  return void 0;
 };
 
 export { binarySearch };
