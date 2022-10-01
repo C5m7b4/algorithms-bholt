@@ -983,3 +983,33 @@ This search will only work on arrays that are already sorted. This algorithm spl
 This data must already be sorted for a binary search to work.
 
 ![alt image](images/binarySearch.png)
+
+********************************
+
+## branch 19
+
+Let's first go back and make a small correction to the binarySearch because we did return a result if the search was not found. We should probably add another test case for that as well, but oh well.
+
+Now onto this branches business:
+
+### ArrayList
+
+suppose we did not have an array in javascript. How would we go about implementing this ourselves. Let's take a look at that.
+
+```js
+const array = {}
+array[0] = 1
+array[1] = 2
+array[2] = 3
+```
+
+This makes lookups super fast, but deleting is terrible. Let's look at deleting index 0
+
+```js
+array[0] = array[1]
+array[1] = array[2]
+delete array[2]
+```
+
+This is terrible right? ArrayList is only good for adding things to the end or looking things up, righ?
+So, let's implement this thing
