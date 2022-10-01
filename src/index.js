@@ -77,12 +77,21 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // const result = binarySearch(sorted, 'firstName', 'paul');
 // console.log(result);
 
-import ArrayList from './ArrayList/ArrayList';
-const array = new ArrayList();
-array.push(1);
-array.push(2);
-array.push(3);
-array.push(4);
-array.push(5);
-array.delete(0);
-console.log(array);
+// import ArrayList from './ArrayList/ArrayList';
+// const array = new ArrayList();
+// array.push(1);
+// array.push(2);
+// array.push(3);
+// array.push(4);
+// array.push(5);
+// array.delete(0);
+// console.log(array);
+
+import LinkedList from './LinkedList/LinkedList';
+const list = new LinkedList();
+list.push(1);
+list.push(2);
+list.push(3);
+
+const result = list.pop(0);
+console.log(result);
