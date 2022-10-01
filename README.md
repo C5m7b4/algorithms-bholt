@@ -974,6 +974,8 @@ This one is pretty straigh forward, we just loop through all the items in the ar
 
 ********************************
 
+## branch 18
+
 ### Binary Search
 
 O(logn) - we don't look at all the elements in the array because we are always splitting everything in half.
