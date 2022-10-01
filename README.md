@@ -955,3 +955,11 @@ Now we are going to add ascending and descending order to our QuickSort algorith
 ## branch 15
 
 Now we are going to add the ability to QuickSort by arrays of objects
+
+********************************
+
+## branch 16
+
+### Radix Sort
+
+This sort is going to sort first by the ones place, then by the tens place, and then by the hundreds place. Strange for sure.
