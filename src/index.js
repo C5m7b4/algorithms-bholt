@@ -43,11 +43,16 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // const result = factorial(4);
 // console.log(result);
 
-import MergeSortObjArr from './MergeSort/MergeSortObjArr';
-const sorted = MergeSortObjArr(employees, 'hireDate');
-console.log(sorted);
+// import MergeSortObjArr from './MergeSort/MergeSortObjArr';
+// const sorted = MergeSortObjArr(employees, 'hireDate');
+// console.log(sorted);
 
 // import MergeSort from './MergeSort/MergeSort';
 // const nums = [3, 5, 1, 7, 6, 9, 2, 4];
 // const sorted = MergeSort(nums);
 // console.log(sorted);
+
+import QuickSort from './QuickSort/QuickSort';
+const arr = [10, 8, 2, 1, 6, 3, 9, 4, 7, 5];
+const result = QuickSort(arr, false);
+console.log(result);
