@@ -32,10 +32,13 @@ import { employees } from './data';
 
 // import { countTo } from './Recursion/countTo';
 // countTo(10, 1);
-import { fibonacci } from './Recursion/fibonacci';
+// import { fibonacci } from './Recursion/fibonacci';
 
-console.log(fibonacci(100));
-import { add } from './Recursion/add';
-debugger;
-const result = add([[1], [2], [3]]);
+// console.log(fibonacci(100));
+// import { add } from './Recursion/add';
+// const result = add([[1], [2], [3]]);
+// console.log(result);
+
+import { factorial } from './Recursion/factorial';
+const result = factorial(4);
 console.log(result);

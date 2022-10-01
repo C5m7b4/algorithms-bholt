@@ -873,4 +873,13 @@ We are going to set up the Insertion sort to handle numbers and then generate an
 ### Recursion
 
 We are going to do a little test with recursion to generate fibonacci numbers first and write some tests to see if they are going to pass or not.  
-Then we will use recursion to do a little math;
+Then we will use recursion to do a little math
+
+********************************
+
+## branch 10
+
+### Factorials
+
+We are going to create a factorial function using recursion
+ 5! = 5 * 4 * 3 * 2 * 1
