@@ -971,3 +971,13 @@ This sort is going to sort first by the ones place, then by the tens place, and 
 ### Linear Search
 
 This one is pretty straigh forward, we just loop through all the items in the array until we find what we are looking for.
+
+********************************
+
+### Binary Search
+
+O(logn) - we don't look at all the elements in the array because we are always splitting everything in half.
+This search will only work on arrays that are already sorted. This algorithm splits the data in half
+This data must already be sorted for a binary search to work.
+
+![alt image](images/binarySearch.png)
