@@ -884,7 +884,7 @@ Then we will use recursion to do a little math
 We are going to create a factorial function using recursion
  5! = 5 * 4 * 3 * 2 * 1
 
- ********************************
+********************************
 
 ## branch 11
 
@@ -893,3 +893,9 @@ We are going to create a factorial function using recursion
 The base case is when we are left with an array of 1. We are going to split that data in half recursively until each only has an array of 1, then sort both halves. Then when we are done with that, we will merge the two back together.
 Here is a diagram
 ![alt info](images/mergeSort.png)
+
+********************************
+
+## branch 12
+
+Now we are going to first add ascending and descending order to our sort and then we are going to create a modified version for handling our data
