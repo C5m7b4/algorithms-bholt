@@ -69,3 +69,10 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 
 // const sorted = RadixSort(nums);
 // console.log(sorted);
+
+import QuickSort from './QuickSort/QuickSortObjArr';
+const sorted = QuickSort(employees, 'firstName');
+console.log(sorted);
+import { binarySearch } from './BinarySearch/BinarySearch';
+const result = binarySearch(sorted, 'firstName', 'paul');
+console.log(result);
