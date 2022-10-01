@@ -1013,3 +1013,15 @@ delete array[2]
 
 This is terrible right? ArrayList is only good for adding things to the end or looking things up, righ?
 So, let's implement this thing
+
+********************************
+
+## branch 20
+
+### LinkedLists
+
+![alt image](images/linkedList.png)
+
+[Link Here is a link to a demo](https://visualgo.net/en/list)
+
+![alt link](images/deleteLinkedList.png)
