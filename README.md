@@ -943,3 +943,9 @@ const QuickSort = arr => {
   // return concat left(pivot, right)
 }
 ```
+
+********************************
+
+## branch 14
+
+Now we are going to add ascending and descending order to our QuickSort algorithm
