@@ -18,7 +18,7 @@ root.appendChild(main);
 // console.log(makeTuples(myArray));
 // console.log(getMiddleOfArray(myArray));
 
-import { employees } from './data';
+import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // import BubbleSortObjArr from './BubbleSort/BubbleSortObjArr';
 // const sorted = BubbleSortObjArr(employees, 'age', false);
 // console.log(sorted);
@@ -39,6 +39,15 @@ import { employees } from './data';
 // const result = add([[1], [2], [3]]);
 // console.log(result);
 
-import { factorial } from './Recursion/factorial';
-const result = factorial(4);
-console.log(result);
+// import { factorial } from './Recursion/factorial';
+// const result = factorial(4);
+// console.log(result);
+
+import MergeSortObjArr from './MergeSort/MergeSortObjArr';
+const sorted = MergeSortObjArr(employees, 'hireDate');
+console.log(sorted);
+
+// import MergeSort from './MergeSort/MergeSort';
+// const nums = [3, 5, 1, 7, 6, 9, 2, 4];
+// const sorted = MergeSort(nums);
+// console.log(sorted);
