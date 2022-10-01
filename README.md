@@ -949,3 +949,9 @@ const QuickSort = arr => {
 ## branch 14
 
 Now we are going to add ascending and descending order to our QuickSort algorithm
+
+********************************
+
+## branch 15
+
+Now we are going to add the ability to QuickSort by arrays of objects

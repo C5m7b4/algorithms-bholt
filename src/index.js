@@ -52,7 +52,11 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // const sorted = MergeSort(nums);
 // console.log(sorted);
 
-import QuickSort from './QuickSort/QuickSort';
-const arr = [10, 8, 2, 1, 6, 3, 9, 4, 7, 5];
-const result = QuickSort(arr, false);
-console.log(result);
+// import QuickSort from './QuickSort/QuickSort';
+// const arr = [10, 8, 2, 1, 6, 3, 9, 4, 7, 5];
+// const result = QuickSort(arr, false);
+// console.log(result);
+
+import QuickSortObjArr from './QuickSort/QuickSortObjArr';
+const sorted = QuickSortObjArr(employees, 'age');
+console.log(sorted);
