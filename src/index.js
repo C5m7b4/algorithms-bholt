@@ -61,11 +61,11 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // const sorted = QuickSortObjArr(employees, 'age');
 // console.log(sorted);
 
-const nums = [
-  20, 51, 3, 801, 415, 62, 4, 17, 19, 11, 1, 100, 1244, 104, 944, 854, 34, 3000,
-  3001, 1200, 633,
-];
-import RadixSort from './RadixSort/RadixSort';
-debugger;
-const sorted = RadixSort(nums);
-console.log(sorted);
+// const nums = [
+//   20, 51, 3, 801, 415, 62, 4, 17, 19, 11, 1, 100, 1244, 104, 944, 854, 34, 3000,
+//   3001, 1200, 633,
+// ];
+// import RadixSort from './RadixSort/RadixSort';
+
+// const sorted = RadixSort(nums);
+// console.log(sorted);
