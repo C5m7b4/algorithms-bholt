@@ -893,9 +893,53 @@ We are going to create a factorial function using recursion
 The base case is when we are left with an array of 1. We are going to split that data in half recursively until each only has an array of 1, then sort both halves. Then when we are done with that, we will merge the two back together.
 Here is a diagram
 ![alt info](images/mergeSort.png)
+Usually when you call sort in javascript, it is using the MergeSort under the hood.
 
 ********************************
 
 ## branch 12
 
 Now we are going to first add ascending and descending order to our sort and then we are going to create a modified version for handling our data
+
+********************************
+
+## branch 13
+
+### Quick Sort
+
+This is another divide and conquire algorithm meaning that it's using a recursive approach. This is going to use a pivot which is the last entry in the array. Then we divide this into two arrays. 
+
+```js
+[4935]
+-> 5 is the pivot since its last
+-> divide list into two arrays, [4,3], and [9]
+-> call quicksort on those two lists
+
+[4,3]
+-> 3 is the pivot
+-> call quicksort on [] and [4]
+-> thos both return as is because they are the base case of length of 1 or 0
+-> concat [], 3, and [4]
+-> return [3,4]
+
+[9]
+-> return as is because of base case of 1
+
+(back into the original function call)
+call concat on [3,4], 5, and [9]
+return [2,3,4,9]
+```
+
+worst case is [1,2,3,4,5,6,7] or an already sorted array
+7 is pivot and there is nothing in the right array or opposite for an already sorted array
+Also this implementation is goimg to be non-destructive
+
+```js
+const QuickSort = arr => {
+  // base case 0 or 1
+  // get pivot, last item in the array
+  // seperate into two arrays based on higher or lower
+  // call quicksort on left and right
+  // return concat left(pivot, right)
+}
+```
