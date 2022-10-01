@@ -963,3 +963,11 @@ Now we are going to add the ability to QuickSort by arrays of objects
 ### Radix Sort
 
 This sort is going to sort first by the ones place, then by the tens place, and then by the hundreds place. Strange for sure.
+
+********************************
+
+## branch 17
+
+### Linear Search
+
+This one is pretty straigh forward, we just loop through all the items in the array until we find what we are looking for.
