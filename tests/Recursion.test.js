@@ -1,5 +1,6 @@
 import { fibonacci } from '../src/Recursion/fibonacci';
 import { add } from '../src/Recursion/add';
+import { factorial } from '../src/Recursion/factorial';
 
 test('should return 1', () => {
   expect(fibonacci(1)).toEqual(1);
@@ -47,4 +48,20 @@ test('should equal 6', () => {
 
 test('should equal 10', () => {
   expect(add([[1], 2, [4, 3]])).toEqual(10);
+});
+
+test('should equal 1', () => {
+  expect(factorial(1)).toEqual(1);
+});
+
+test('should equal 2', () => {
+  expect(factorial(2)).toEqual(2);
+});
+
+test('should equal 6', () => {
+  expect(factorial(3)).toEqual(6);
+});
+
+test('should equal 3628800', () => {
+  expect(factorial(10)).toEqual(3628800);
 });
