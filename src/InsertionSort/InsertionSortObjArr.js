@@ -2,7 +2,6 @@ const InsertionSortObjArr = (arr, key, asc = true, isDate = false) => {
   for (let i = 1; i < arr.length; i++) {
     const valueToInsert = arr[i];
     let j;
-    debugger;
     if (isDate) {
       if (asc) {
         for (

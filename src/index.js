@@ -29,3 +29,13 @@ import { employees } from './data';
 // import InsertionSortObjArr from './InsertionSort/InsertionSortObjArr';
 // const sorted = InsertionSortObjArr(employees, 'hireDate', true);
 // console.log(sorted);
+
+// import { countTo } from './Recursion/countTo';
+// countTo(10, 1);
+import { fibonacci } from './Recursion/fibonacci';
+
+console.log(fibonacci(100));
+import { add } from './Recursion/add';
+debugger;
+const result = add([[1], [2], [3]]);
+console.log(result);

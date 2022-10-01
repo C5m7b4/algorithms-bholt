@@ -865,3 +865,12 @@ Now we should have a complete BubbleSort algorithm
 much better than BubbleSort O(n2)
 This sorting method is looking at each number and determining if is greater than the next number and then recurse backwards doing the same thing. if it is bigger then they get swapped.
 We are going to set up the Insertion sort to handle numbers and then generate another function to handle sorting arrays of objects by numbers, strings, and dates
+
+********************************
+
+## branch 9
+
+### Recursion
+
+We are going to do a little test with recursion to generate fibonacci numbers first and write some tests to see if they are going to pass or not.  
+Then we will use recursion to do a little math;
