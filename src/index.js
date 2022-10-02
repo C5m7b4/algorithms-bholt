@@ -87,7 +87,7 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // array.delete(0);
 // console.log(array);
 
-import LinkedList from './LinkedList/LinkedList';
+// import LinkedList from './LinkedList/LinkedList';
 // const list = new LinkedList();
 // list.push(1);
 // list.push(2);
@@ -96,10 +96,17 @@ import LinkedList from './LinkedList/LinkedList';
 // const result = list.pop(0);
 // console.log(result);
 
-const item1 = { name: 'betty', age: 18 };
-const item2 = { name: 'tim', age: 20 };
-const list = new LinkedList();
-list.push(item1);
-list.push(item2);
+// const item1 = { name: 'betty', age: 18 };
+// const item2 = { name: 'tim', age: 20 };
+// const list = new LinkedList();
+// list.push(item1);
+// list.push(item2);
 
+// console.log(list);
+
+const nums = [3, 7, 4, 6, 5, 1, 10, 2, 9, 8];
+import BinarySearchTree from './BinarySearchTree/BinarySearchTree';
+const list = new BinarySearchTree();
+debugger;
+nums.map((num) => list.add(num));
 console.log(list);
