@@ -1071,3 +1071,7 @@ This would be very im-performant, right? If we need to do a search for 10, we wo
 This is how the balancing works:
 
 ![alt image](images/avl-balancing.png)
+
+Out final output will look like this:
+
+![alt image](images/avl-output.png)
