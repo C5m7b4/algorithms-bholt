@@ -1,5 +1,5 @@
 import BinarySearchTree from '../src/BinarySearchTree/BinarySearchTree';
-
+import { employees } from '../src/data';
 const nums = [3, 7, 4, 6, 5, 1, 10, 2, 9, 8];
 
 test('should create a correct tree', () => {
