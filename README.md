@@ -1098,3 +1098,41 @@ postorder output
 The tree in our tests should look something like this:
 
 ![alt image](images/dfs.png)
+
+******************************** 
+
+## branch 26
+
+### Breadth First Search Traversal
+
+Let's say we had this tree:
+![alt image](images/binarySearchTree.png)
+
+In a breadth first search we recurse level by level
+
+[8,3,10,1,6,14,4,7,13]
+
+For this, we are going to be using a queue. FIFO.
+
+```js
+-> start function by adding root to the queue, queue = [8]
+-> process 8, add to final array array = [8]
+-> queue 3 and 10 to queue, queue = [3, 10]
+-> dequeue 3, queue = [10]
+-> queue 3's children, queue = [10, 1, 6]
+-> add 3 to final array, array = [8, 3]
+-> dequeue 10, queue = [1, 6]
+-> queue 10's children, queue = [1, 6, 14]
+-> add 10 to final array, array = [8, 3, 10]
+-> dequeue 1, queue = [6, 14]
+-> queue 1's children, nothing
+-> add 1 to final array, [8, 3, 10, 1]
+
+[etc.]
+
+final array is [8, 3, 10, 1, 6, 14, 4, 7, 13]
+```
+
+The tree in our tests looks like this:
+
+![alt image](images/dfs-output.png)
