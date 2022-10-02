@@ -1048,6 +1048,10 @@ There are many varities of tree data structures. We'll look at two of them in th
 ![alt image](images/binaryTreeLookup.png)
 ![alt image](images/addingToBinarySearchTree.png)
 ![alt image](images/deleteFromBST.png)
-![alt image](images/deleteBSTSteps.png)\
+![alt image](images/deleteBSTSteps.png)
 
 Let's write some tests and get started.
+
+Our Test results should look like this:
+
+![alt image](images/our-bst-diagram.png)
