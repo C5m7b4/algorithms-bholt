@@ -1075,3 +1075,26 @@ This is how the balancing works:
 Out final output will look like this:
 
 ![alt image](images/avl-output.png)
+
+********************************
+
+## branch 25
+
+### Depth First Search Tree traversal
+
+Let's say we had this tree:
+![alt image](images/binarySearchTree.png)
+
+With DFS the output would be
+preorder output
+[8,3,1,6,4,7,10,14,13]
+
+inorder output
+[1,3,4,6,7,8,10,14,13]
+
+postorder output
+[1,4,7,6,3,13,14,10,8]
+
+The tree in our tests should look something like this:
+
+![alt image](images/dfs.png)

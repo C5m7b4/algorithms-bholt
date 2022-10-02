@@ -118,3 +118,56 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // console.log(objs);
 // console.log(objs.left.left.value);
 // console.log(objs.right.left.left);
+
+const tree = {
+  value: 8,
+  left: {
+    value: 4,
+    left: {
+      value: 3,
+      left: {
+        value: 2,
+        left: null,
+        right: null,
+      },
+      right: null,
+    },
+    right: {
+      value: 5,
+      left: null,
+      right: {
+        value: 7,
+        left: {
+          value: 6,
+          left: null,
+          right: null,
+        },
+      },
+    },
+  },
+  right: {
+    value: 12,
+    left: {
+      value: 10,
+      left: {
+        value: 9,
+        left: null,
+        right: null,
+      },
+      right: {
+        value: 11,
+        left: null,
+        right: null,
+      },
+    },
+  },
+};
+
+import {
+  preOrderTraverse,
+  inOrderTraverse,
+  postOrderTraverse,
+} from './Traversals/DepthFirstSearch';
+console.log(preOrderTraverse(tree, []));
+console.log(inOrderTraverse(tree, []));
+console.log(postOrderTraverse(tree, []));
