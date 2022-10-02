@@ -1032,3 +1032,22 @@ So, let's implement this thing
 
 Now let's play around with linked lists and objects
 
+********************************
+
+## branch 22
+
+First let's fix a bug that was found in LinkedList, we need to set the tail to null when there is no head.
+
+Addendum...
+
+### BinarySearchTree
+
+There are many varities of tree data structures. We'll look at two of them in this course, Binary search tree and AVL trees. IN BST's, the node can only have two children. These trees have a mathematical property where all children that are smaller go on the left side and all children that are larger go on the right side:
+
+![alt image](images/binarySearchTree.png)
+![alt image](images/binaryTreeLookup.png)
+![alt image](images/addingToBinarySearchTree.png)
+![alt image](images/deleteFromBST.png)
+![alt image](images/deleteBSTSteps.png)\
+
+Let's write some tests and get started.
