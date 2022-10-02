@@ -88,10 +88,18 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // console.log(array);
 
 import LinkedList from './LinkedList/LinkedList';
-const list = new LinkedList();
-list.push(1);
-list.push(2);
-list.push(3);
+// const list = new LinkedList();
+// list.push(1);
+// list.push(2);
+// list.push(3);
 
-const result = list.pop(0);
-console.log(result);
+// const result = list.pop(0);
+// console.log(result);
+
+const item1 = { name: 'betty', age: 18 };
+const item2 = { name: 'tim', age: 20 };
+const list = new LinkedList();
+list.push(item1);
+list.push(item2);
+
+console.log(list);

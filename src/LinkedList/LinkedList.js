@@ -42,6 +42,7 @@ class LinkedList {
         this.head = head.next;
       } else {
         this.head = null;
+        this.tail = null;
       }
       this.length--;
       return head.value;

@@ -1025,3 +1025,10 @@ So, let's implement this thing
 [Link Here is a link to a demo](https://visualgo.net/en/list)
 
 ![alt link](images/deleteLinkedList.png)
+
+********************************
+
+## branch 21
+
+Now let's play around with linked lists and objects
+
