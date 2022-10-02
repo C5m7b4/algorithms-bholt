@@ -1055,3 +1055,19 @@ Let's write some tests and get started.
 Our Test results should look like this:
 
 ![alt image](images/our-bst-diagram.png)
+
+********************************
+
+## branch 23
+
+### AVL Tree
+
+An AVL Tree is a self balancing BinarySearchTree. This helps in a case where the array was already sorted and our tree would end up looking something like this:
+
+![alt image](images/badTree.png)
+
+This would be very im-performant, right? If we need to do a search for 10, we woud have to go through every element of the array to get there. That being said, I don't think we would ever use this in production, but it's interesting to know about.
+
+This is how the balancing works:
+
+![alt image](images/avl-balancing.png)

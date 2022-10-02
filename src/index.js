@@ -104,9 +104,17 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 
 // console.log(list);
 
+// const nums = [3, 7, 4, 6, 5, 1, 10, 2, 9, 8];
+// import BinarySearchTree from './BinarySearchTree/BinarySearchTree';
+// const list = new BinarySearchTree();
+// nums.map((num) => list.add(num));
+// console.log(list);
+
+import AvlTree from './AvlTree/AvlTree';
 const nums = [3, 7, 4, 6, 5, 1, 10, 2, 9, 8];
-import BinarySearchTree from './BinarySearchTree/BinarySearchTree';
-const list = new BinarySearchTree();
-debugger;
-nums.map((num) => list.add(num));
-console.log(list);
+const tree = new AvlTree();
+nums.map((num) => tree.add(num));
+const objs = tree.toObject();
+console.log(objs);
+console.log(objs.left.left.value);
+console.log(objs.right.left.left);
