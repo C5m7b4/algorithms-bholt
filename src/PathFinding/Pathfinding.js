@@ -13,6 +13,8 @@ const generateVisited = (maze) => {
         closed: maze[y][x] === 1,
         length: 0,
         openedBy: NO_ONE,
+        x,
+        y,
       };
       yAxis.push(coordinate);
     }
@@ -23,20 +25,25 @@ const generateVisited = (maze) => {
 
 export const findShortestPath = (maze, [xa, ya], [xb, yb]) => {
   const visited = generateVisited(maze);
+  logMaze(visited);
 
   visited[ya][xa].openedBy = BY_A;
   visited[yb][xb].openedBy = BY_B;
   console.log(visited);
   // here we should be able to see something usefull
   // create our branch here
-  let aQueue = visited[ya][xa];
-  let bQueue = visited[yb][xb];
+  let aQueue = [visited[ya][xa]];
+  let bQueue = [visited[yb][xb]];
 
   let iteration = 0;
+
+  logMaze(visited);
+  console.log('aQueue', aQueue.length);
 
   // this is just the same as our graph using a breadth-first-search
   while (aQueue.length && bQueue.length) {
     iteration++;
+    console.log('iteration', iteration);
 
     // gather aNeighbors
     let aNeighbors = [];
@@ -50,7 +57,7 @@ export const findShortestPath = (maze, [xa, ya], [xb, yb]) => {
     // process aNeighbors
     for (let i = 0; i < aNeighbors.length; i++) {
       const neighbor = aNeighbors[i];
-      if (neighbor.opendBy === BY_B) {
+      if (neighbor.openedBy === BY_B) {
         return neighbor.length + iteration;
       } else if (neighbor.openedBy === NO_ONE) {
         neighbor.length = iteration;
@@ -58,7 +65,32 @@ export const findShortestPath = (maze, [xa, ya], [xb, yb]) => {
         aQueue.push(neighbor);
       }
     }
+
+    logMaze(visited);
+
+    // gather bNeighbors
+    let bNeighbors = [];
+    while (bQueue.length) {
+      const coordinate = bQueue.shift();
+      bNeighbors = bNeighbors.concat(
+        getNeighbors(visited, coordinate.x, coordinate.y)
+      );
+    }
+
+    // process bNeighbors
+    for (let i = 0; i < bNeighbors.length; i++) {
+      const neighbor = bNeighbors[i];
+      if (neighbor.openedBy === BY_A) {
+        return neighbor.length + iteration;
+      } else if (neighbor.openedBy === NO_ONE) {
+        neighbor.length = iteration;
+        neighbor.openedBy = BY_B;
+        bQueue.push(neighbor);
+      }
+    }
+    logMaze(visited);
   }
+  console.log('returning -1');
   return -1;
 };
 

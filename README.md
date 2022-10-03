@@ -1299,3 +1299,8 @@ Go to Breadth-First-Search, uncheck Allow Diagonal and check bi-directional and 
 
 [What is the difference between BFS and Dijkstras algorithms when looking for the shortest path](https://stackoverflow.com/questions/25449781/what-is-difference-between-bfs-and-dijkstras-algorithms-when-looking-for-shorte)
 
+********************************
+
+## branch 32
+
+We were finally able to solve all of our tests. This one took me through the ringer.
