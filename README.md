@@ -1099,7 +1099,7 @@ The tree in our tests should look something like this:
 
 ![alt image](images/dfs.png)
 
-******************************** 
+********************************
 
 ## branch 26
 
@@ -1136,3 +1136,22 @@ final array is [8, 3, 10, 1, 6, 14, 4, 7, 13]
 The tree in our tests looks like this:
 
 ![alt image](images/dfs-output.png)
+
+********************************
+
+## branch 27
+
+### Heap Sort
+
+A Head is an array that represents a data structure. 
+
+A priority queue is a normal queue that when you queue something it has a priority associated with it. Things that are higher priority are dequeued first. Think of your Internet traffic and how it handles data packets. If you're both syncing your Dropbox and watching Netflix, the Netflix packets would be higher priority because if you drop those the video stutters whereas the Dropbox stuff can happen whenever and you'd never notice. This would be well modeled as a priority queue. And those are usually stored as heaps.
+
+Anyting lower in the tree must be smaller.
+
+The way to represent a binary tree as an array is that for any index of an array n, its left child is stored at 2n + 1; and its right child is at 2n + 2. The root node will always be at 0. That means the root node's left child is at 1 and right child is at 2. 1's left child is at 3 and right is at 4.
+
+![alt image](images/heap-tree.png)
+![alt image](images/heap-array.png)
+
+[BigO cheatsheet](https://www.bigocheatsheet.com/)
