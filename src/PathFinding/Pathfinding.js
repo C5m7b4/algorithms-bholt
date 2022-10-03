@@ -23,5 +23,10 @@ const generateVisited = (maze) => {
 
 export const findShortestPath = (maze, [xa, ya], [xb, yb]) => {
   const visited = generateVisited(maze);
+
+  visited[ya][xa].openedBy = BY_A;
+  visited[yb][xb].openedBy = BY_B;
   console.log(visited);
+  // here we should be able to see something usefull
+  // create our branch here
 };
