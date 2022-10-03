@@ -1325,3 +1325,13 @@ b – o – s – t – o – n
 
 For this exercise, we are going to install lodash
 [notes on lodash.intersection](https://www.geeksforgeeks.org/lodash-_-intersection-method/)
+
+********************************
+
+## branch 34
+
+### Bloom Filters
+
+[Article on Medium](https://blog.medium.com/what-are-bloom-filters-1ec2a50c68ff)
+
+Bloom filters work like a Set, but not everything has to be added to it. We take a string and run it through 3 hashing functions.

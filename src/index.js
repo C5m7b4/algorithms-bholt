@@ -183,9 +183,16 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 
 // findShortestPath(fourByFour, [0, 0], [3, 3]);
 
-import * as _ from 'lodash';
-import { createTrie } from './Tries/Tries';
-import { CITY_NAMES } from './Tries/cities';
-const r = createTrie(CITY_NAMES.slice(0, 10));
-const completions = r.complete('philadelph');
-console.log(completions);
+// import * as _ from 'lodash';
+// import { createTrie } from './Tries/Tries';
+// import { CITY_NAMES } from './Tries/cities';
+// const r = createTrie(CITY_NAMES.slice(0, 10));
+// const completions = r.complete('philadelph');
+// console.log(completions);
+
+import BloomFilter from './BloomFilters/BloomFilters';
+const bf = new BloomFilter();
+//debugger;
+console.log(bf.contains('Brian'));
+bf.add('Brian');
+console.log(bf.contains('Brian'));

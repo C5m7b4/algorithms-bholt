@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "util": "^0.12.4"
+    "util": "^0.12.4",
+    "xxhashjs": "^0.2.2"
   }
 }
