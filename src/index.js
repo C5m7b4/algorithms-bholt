@@ -181,4 +181,5 @@ const fourByFour = [
   [0, 0, 0, 2],
 ];
 
+debugger;
 findShortestPath(fourByFour, [0, 0], [3, 3]);

@@ -22,10 +22,8 @@ describe('pathfinding - happy path', () => {
     [0, 0, 0, 0, 0, 0],
     [0, 0, 2, 0, 0, 0],
   ];
-  it.skip('should sove a 6x6 maze', () => {
-    expect('should solve a 6x6 maze', () => {
-      expect(findShortestPath(sixBySix, [1, 1], [2, 5])).toEqual(7);
-    });
+  it('should sove a 6x6 maze', () => {
+    expect(findShortestPath(sixBySix, [1, 1], [2, 5])).toEqual(7);
   });
 
   const eightByEight = [
@@ -38,7 +36,7 @@ describe('pathfinding - happy path', () => {
     [0, 2, 0, 0, 0, 0, 1, 0],
     [0, 0, 0, 0, 0, 0, 1, 2],
   ];
-  it.skip('should solve a 8x8 maze', () => {
+  it('should solve a 8x8 maze', () => {
     expect(findShortestPath(eightByEight, [1, 7], [7, 7])).toEqual(16);
   });
 
@@ -59,12 +57,12 @@ describe('pathfinding - happy path', () => {
     [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   ];
-  it.skip('should solve a 15x15 maze', () => {
+  it('should solve a 15x15 maze', () => {
     expect(findShortestPath(fifteenByFifteen, [1, 1], [8, 8])).toEqual(78);
   });
 });
 
-describe.skip('pathfinding – edge cases', function () {
+describe('pathfinding – edge cases', function () {
   const byEachOther = [
     [0, 0, 0, 0, 0],
     [0, 2, 2, 0, 0],
@@ -72,7 +70,7 @@ describe.skip('pathfinding – edge cases', function () {
     [0, 1, 1, 1, 1],
     [0, 0, 0, 0, 0],
   ];
-  it.skip("should solve the maze if they're next to each other", () => {
+  it("should solve the maze if they're next to each other", () => {
     expect(findShortestPath(byEachOther, [1, 1], [2, 1])).toEqual(1);
   });
 
@@ -83,7 +81,7 @@ describe.skip('pathfinding – edge cases', function () {
     [1, 1, 1, 0, 0],
     [0, 0, 0, 0, 2],
   ];
-  it.skip("should return -1 when there's no possible path", () => {
+  it("should return -1 when there's no possible path", () => {
     expect(findShortestPath(impossible, [1, 1], [4, 4])).toEqual(-1);
   });
 });
