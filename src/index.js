@@ -172,14 +172,20 @@ import { employees, sortedEmployeesByAge, sortedEmployeesByDate } from './data';
 // console.log(inOrderTraverse(tree, []));
 // console.log(postOrderTraverse(tree, []));
 
-import { findShortestPath } from './PathFinding/Pathfinding';
+// import { findShortestPath } from './PathFinding/Pathfinding';
 
-const fourByFour = [
-  [2, 0, 0, 0],
-  [0, 0, 0, 0],
-  [0, 0, 0, 0],
-  [0, 0, 0, 2],
-];
+// const fourByFour = [
+//   [2, 0, 0, 0],
+//   [0, 0, 0, 0],
+//   [0, 0, 0, 0],
+//   [0, 0, 0, 2],
+// ];
 
-debugger;
-findShortestPath(fourByFour, [0, 0], [3, 3]);
+// findShortestPath(fourByFour, [0, 0], [3, 3]);
+
+import * as _ from 'lodash';
+import { createTrie } from './Tries/Tries';
+import { CITY_NAMES } from './Tries/cities';
+const r = createTrie(CITY_NAMES.slice(0, 10));
+const completions = r.complete('philadelph');
+console.log(completions);
