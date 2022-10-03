@@ -1155,3 +1155,32 @@ The way to represent a binary tree as an array is that for any index of an array
 ![alt image](images/heap-array.png)
 
 [BigO cheatsheet](https://www.bigocheatsheet.com/)
+
+********************************
+
+## branch 28
+
+### Graphs
+
+Graphs are used for relationships. An edge is what connects objects. 
+
+```js
+   Bob — Sally
+  /    \
+me    Alice
+  \    /
+   Maria
+
+-> Add me to queue
+-> Dequeue me
+-> Add my job to the tally (program manager)
+-> Queue my connections, Bob and Maria
+-> Dequeue Bob
+-> Add Bobs job to the tally (designer)
+-> Queue Bobs connection, Sally and Alice
+-> Dequeue Maria
+-> Add Marias job to the tally (program manager)
+-> Queue Marias connections. Alice has already been queued so dont add any.
+
+-> Finish first iteration, one degree of separation
+```
