@@ -1304,3 +1304,24 @@ Go to Breadth-First-Search, uncheck Allow Diagonal and check bi-directional and 
 ## branch 32
 
 We were finally able to solve all of our tests. This one took me through the ringer.
+
+********************************
+
+## branch 33
+
+### Tries
+
+This is play on words for Re***trie***ve
+It's a tree that's optimized for searching in things like type-ahead.
+Why is this useful? If a user types bo in the text input, you can go through your data structure, find the o node in that chain, and then all you have to do is a depth-first traversal of the children nodes to for a list of autocomplete suggestions.
+
+```js
+  a – [various children]
+ /
+b – o – s – t – o – n
+     \
+      i – s – e
+```
+
+For this exercise, we are going to install lodash
+[notes on lodash.intersection](https://www.geeksforgeeks.org/lodash-_-intersection-method/)
